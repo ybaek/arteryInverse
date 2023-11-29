@@ -1,6 +1,5 @@
 function [inds] = resampling(S,w,method)
-% Support four methods in Chapter 9, Chopin & Papaspiliopoulos
-% Note systematic sampling has been less studied
+% Supports four methods in Chapter 9, Chopin & Papaspiliopoulos
 inds = zeros(1,S);
 if method == "residual"
     res_w = S * w / sum(w);
